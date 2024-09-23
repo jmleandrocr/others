@@ -1,117 +1,127 @@
-Mis disculpas por la confusión anterior. Ahora, te proporcionaré todos los puntos para **cada una de las tareas** en el formato que indicaste. Aquí va:
+<h3>Task 1.1: Research RAG methodologies and implementation with Azure Assistant API</h3>
+<p><b>General</b>: Research - GenAI - As a developer, I need to investigate RAG methodologies for implementation with Azure Assistant API.</p>
+<p><b>Description</b>: Investigate best practices for RAG (Retrieve Argument Generation) methodologies, focusing on integration with Azure Assistant API.</p>
+<p><b>DOD</b>: Research completed, documentation of findings, recommendations for implementation.</p>
+<p><b>Acceptance Criteria</b>:</p>
+<ul>
+  <li><b>Given</b>: Access to relevant documentation and resources on Azure Assistant API.</li>
+  <li><b>When</b>: I have gathered information about RAG methodologies.</li>
+  <li><b>Then</b>: I will document the best approaches for integration with Azure Assistant API.</li>
+</ul>
+<p><b>Dependency</b>: None</p>
 
----
+<hr/>
 
-### **Bucket 1: Research and Planning**  
-**Version 1: Functional Interface without AutoGen**
+<h3>Task 1.2: Define use cases for custom function calls with MySQL and OpenSearch</h3>
+<p><b>General</b>: Research - Custom Function Calls - As a developer, I need to define use cases for custom function calls using MySQL and OpenSearch.</p>
+<p><b>Description</b>: Identify and define specific use cases where custom function calls will be useful for querying MySQL and searching OpenSearch.</p>
+<p><b>DOD</b>: Defined use cases, documented in project plan.</p>
+<p><b>Acceptance Criteria</b>:</p>
+<ul>
+  <li><b>Given</b>: Knowledge of the project’s database and document search needs.</li>
+  <li><b>When</b>: I have reviewed potential interactions with MySQL and OpenSearch.</li>
+  <li><b>Then</b>: I will list use cases where function calls are necessary.</li>
+</ul>
+<p><b>Dependency</b>: Task 1.1</p>
 
----
+<hr/>
 
-**Task 1.1: Research RAG methodologies and implementation with Azure Assistant API**  
-**General**: Research - GenAI - As a developer, I need to investigate RAG methodologies for implementation with Azure Assistant API.  
-**Description**: Investigate best practices for RAG (Retrieve Argument Generation) methodologies, focusing on integration with Azure Assistant API.  
-**DOD**: Research completed, documentation of findings, recommendations for implementation.  
-**Acceptance Criteria**:  
-- **Given**: Access to relevant documentation and resources on Azure Assistant API.  
-- **When**: I have gathered information about RAG methodologies.  
-- **Then**: I will document the best approaches for integration with Azure Assistant API.
+<h3>Task 1.3: Analyze security and compliance for APIs and databases</h3>
+<p><b>General</b>: Security Analysis - As a developer, I need to analyze security and compliance requirements for API and database integration.</p>
+<p><b>Description</b>: Review security requirements, including authentication, encryption, and compliance for API and database communication.</p>
+<p><b>DOD</b>: Security risks identified and documented.</p>
+<p><b>Acceptance Criteria</b>:</p>
+<ul>
+  <li><b>Given</b>: API documentation and compliance standards.</li>
+  <li><b>When</b>: I have reviewed the API and database integration points.</li>
+  <li><b>Then</b>: I will produce a list of necessary security and compliance measures.</li>
+</ul>
+<p><b>Dependency</b>: Task 1.2</p>
 
----
+<hr/>
 
-**Task 1.2: Define use cases for custom function calls with MySQL and OpenSearch**  
-**General**: Research - Custom Function Calls - As a developer, I need to define use cases for custom function calls using MySQL and OpenSearch.  
-**Description**: Identify and define specific use cases where custom function calls will be useful for querying MySQL and searching OpenSearch.  
-**DOD**: Defined use cases, documented in project plan.  
-**Acceptance Criteria**:  
-- **Given**: Knowledge of the project’s database and document search needs.  
-- **When**: I have reviewed potential interactions with MySQL and OpenSearch.  
-- **Then**: I will list use cases where function calls are necessary.
+<h3>Task 1.4: Review official documentation for Azure Assistant API</h3>
+<p><b>General</b>: Research - Documentation - As a developer, I need to review the official Azure Assistant API documentation to ensure correct implementation.</p>
+<p><b>Description</b>: Carefully study the official documentation for Azure Assistant API to understand its features, limitations, and best practices for integration.</p>
+<p><b>DOD</b>: Documentation reviewed and relevant insights captured.</p>
+<p><b>Acceptance Criteria</b>:</p>
+<ul>
+  <li><b>Given</b>: Access to Azure Assistant API documentation.</li>
+  <li><b>When</b>: I complete the review.</li>
+  <li><b>Then</b>: I will have a comprehensive understanding of the API’s capabilities and how to integrate it effectively.</li>
+</ul>
+<p><b>Dependency</b>: Task 1.3</p>
 
----
+<hr/>
 
-**Task 1.3: Analyze security and compliance for APIs and databases**  
-**General**: Security Analysis - As a developer, I need to analyze security and compliance requirements for API and database integration.  
-**Description**: Review security requirements, including authentication, encryption, and compliance for API and database communication.  
-**DOD**: Security risks identified and documented.  
-**Acceptance Criteria**:  
-- **Given**: API documentation and compliance standards.  
-- **When**: I have reviewed the API and database integration points.  
-- **Then**: I will produce a list of necessary security and compliance measures.
+<h3>Task 1.5: Define minimum viable product (MVP) requirements for Version 1 (without AutoGen)</h3>
+<p><b>General</b>: Planning - MVP - As a developer, I need to define the minimum viable product (MVP) for Version 1 to prioritize core functionalities.</p>
+<p><b>Description</b>: Identify and define the essential features needed to release the first functional version of the system without AutoGen, focusing on core integrations.</p>
+<p><b>DOD</b>: MVP requirements defined and approved.</p>
+<p><b>Acceptance Criteria</b>:</p>
+<ul>
+  <li><b>Given</b>: The overall project goals.</li>
+  <li><b>When</b>: I define the MVP for Version 1.</li>
+  <li><b>Then</b>: I will have a clear list of features to focus on for the initial release.</li>
+</ul>
+<p><b>Dependency</b>: Task 1.4</p>
 
----
+<hr/>
 
-**Task 1.4: Review official documentation for Azure Assistant API**  
-**General**: Research - Documentation - As a developer, I need to review the official Azure Assistant API documentation to ensure correct implementation.  
-**Description**: Carefully study the official documentation for Azure Assistant API to understand its features, limitations, and best practices for integration.  
-**DOD**: Documentation reviewed and relevant insights captured.  
-**Acceptance Criteria**:  
-- **Given**: Access to Azure Assistant API documentation.  
-- **When**: I complete the review.  
-- **Then**: I will have a comprehensive understanding of the API’s capabilities and how to integrate it effectively.
+<!-- Version 2: Integration of AutoGen and Initial Dashboard -->
 
----
+<h3>Task 1.6: Research AutoGen for automated document analysis</h3>
+<p><b>General</b>: Research - AutoGen - As a developer, I need to research AutoGen methodologies for automated document analysis.</p>
+<p><b>Description</b>: Investigate best practices for integrating AutoGen into document analysis workflows to improve system capabilities.</p>
+<p><b>DOD</b>: Research completed and findings documented.</p>
+<p><b>Acceptance Criteria</b>:</p>
+<ul>
+  <li><b>Given</b>: Documentation on AutoGen.</li>
+  <li><b>When</b>: I complete the research.</li>
+  <li><b>Then</b>: I will provide a strategy for integrating AutoGen into document analysis.</li>
+</ul>
+<p><b>Dependency</b>: Task 1.5</p>
 
-**Task 1.5: Define minimum viable product (MVP) requirements for Version 1 (without AutoGen)**  
-**General**: Planning - MVP - As a developer, I need to define the minimum viable product (MVP) for Version 1 to prioritize core functionalities.  
-**Description**: Identify and define the essential features needed to release the first functional version of the system without AutoGen, focusing on core integrations.  
-**DOD**: MVP requirements defined and approved.  
-**Acceptance Criteria**:  
-- **Given**: The overall project goals.  
-- **When**: I define the MVP for Version 1.  
-- **Then**: I will have a clear list of features to focus on for the initial release.
+<hr/>
 
----
+<h3>Task 1.7: Define metrics and data sources for the dashboard of indicators</h3>
+<p><b>General</b>: Planning - Dashboard - As a developer, I need to define the key metrics and data sources for the dashboard of indicators.</p>
+<p><b>Description</b>: Identify the key metrics that the dashboard will display and the data sources required to provide real-time insights.</p>
+<p><b>DOD</b>: Metrics and data sources defined and documented.</p>
+<p><b>Acceptance Criteria</b>:</p>
+<ul>
+  <li><b>Given</b>: The project requirements for system performance and monitoring.</li>
+  <li><b>When</b>: I define the relevant metrics and data sources.</li>
+  <li><b>Then</b>: The dashboard will have a clear set of indicators to track system performance.</li>
+</ul>
+<p><b>Dependency</b>: Task 1.6</p>
 
-### **Version 2: Integration of AutoGen and Initial Dashboard**
+<hr/>
 
----
+<!-- Version 3: Advanced Dashboard and Enhancements -->
 
-**Task 1.6: Research AutoGen for automated document analysis**  
-**General**: Research - AutoGen - As a developer, I need to research AutoGen methodologies for automated document analysis.  
-**Description**: Investigate best practices for integrating AutoGen into document analysis workflows to improve system capabilities.  
-**DOD**: Research completed and findings documented.  
-**Acceptance Criteria**:  
-- **Given**: Documentation on AutoGen.  
-- **When**: I complete the research.  
-- **Then**: I will provide a strategy for integrating AutoGen into document analysis.
+<h3>Task 1.8: Review user feedback from Version 2 for enhancements</h3>
+<p><b>General</b>: Research - Feedback - As a developer, I need to review the feedback from Version 2 to determine what enhancements are required for Version 3.</p>
+<p><b>Description</b>: Analyze user feedback from Version 2 to identify areas for improvement and new feature requests for Version 3.</p>
+<p><b>DOD</b>: User feedback reviewed and documented.</p>
+<p><b>Acceptance Criteria</b>:</p>
+<ul>
+  <li><b>Given</b>: Feedback collected from users of Version 2.</li>
+  <li><b>When</b>: I analyze the feedback.</li>
+  <li><b>Then</b>: I will document necessary enhancements for Version 3.</li>
+</ul>
+<p><b>Dependency</b>: Task 1.7</p>
 
----
+<hr/>
 
-**Task 1.7: Define metrics and data sources for the dashboard of indicators**  
-**General**: Planning - Dashboard - As a developer, I need to define the key metrics and data sources for the dashboard of indicators.  
-**Description**: Identify the key metrics that the dashboard will display and the data sources required to provide real-time insights.  
-**DOD**: Metrics and data sources defined and documented.  
-**Acceptance Criteria**:  
-- **Given**: The project requirements for system performance and monitoring.  
-- **When**: I define the relevant metrics and data sources.  
-- **Then**: The dashboard will have a clear set of indicators to track system performance.
-
----
-
-### **Version 3: Advanced Dashboard and Enhancements**
-
----
-
-**Task 1.8: Review user feedback from Version 2 for enhancements**  
-**General**: Research - Feedback - As a developer, I need to review the feedback from Version 2 to determine what enhancements are required for Version 3.  
-**Description**: Analyze user feedback from Version 2 to identify areas for improvement and new feature requests for Version 3.  
-**DOD**: User feedback reviewed and documented.  
-**Acceptance Criteria**:  
-- **Given**: Feedback collected from users of Version 2.  
-- **When**: I analyze the feedback.  
-- **Then**: I will document necessary enhancements for Version 3.
-
----
-
-**Task 1.9: Plan comprehensive security audits and incident response strategies**  
-**General**: Planning - Security - As a developer, I need to plan comprehensive security audits and establish incident response strategies for Version 3.  
-**Description**: Develop a detailed plan for conducting security audits and handling potential security incidents, ensuring the system’s integrity.  
-**DOD**: Security audit plan and incident response strategies documented and approved.  
-**Acceptance Criteria**:  
-- **Given**: Current security measures.  
-- **When**: I complete the planning for audits and response strategies.  
-- **Then**: The system will have a clear plan for maintaining security and handling incidents.
-
----
-
-Espero que esto sea lo que necesitabas. ¡Avísame si te falta algo más!
+<h3>Task 1.9: Plan comprehensive security audits and incident response strategies</h3>
+<p><b>General</b>: Planning - Security - As a developer, I need to plan comprehensive security audits and establish incident response strategies for Version 3.</p>
+<p><b>Description</b>: Develop a detailed plan for conducting security audits and handling potential security incidents, ensuring the system’s integrity.</p>
+<p><b>DOD</b>: Security audit plan and incident response strategies documented and approved.</p>
+<p><b>Acceptance Criteria</b>:</p>
+<ul>
+  <li><b>Given</b>: Current security measures.</li>
+  <li><b>When</b>: I complete the planning for audits and response strategies.</li>
+  <li><b>Then</b>: The system will have a clear plan for maintaining security and handling incidents.</li>
+</ul>
+<p><b>Dependency</b>: Task 1.8</p>
