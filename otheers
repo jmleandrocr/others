@@ -1,9 +1,13 @@
-Aquí tienes las tareas solicitadas siguiendo el formato que mencionaste:
+Mis disculpas por la confusión anterior. Ahora te presento las tareas separadas de forma clara, con **GenAI** correctamente colocado en el campo **General**.
+
+---
+
+<h3>Version 1: Functional Interface without AutoGen</h3>
 
 ---
 
 <h3>Task 2.1: Define the architecture for Azure Assistant API, MySQL, and OpenSearch</h3>  
-General: Architecture - As a developer, I need to define the architecture that supports integration with Azure Assistant API, MySQL, and OpenSearch.  
+General: GenAI - Architecture - As a developer, I need to define the architecture that supports integration with Azure Assistant API, MySQL, and OpenSearch.  
 <p><b>Description</b>: Develop a clear architecture diagram showing how data flows between the system components (Azure Assistant API, MySQL, OpenSearch).</p>  
 <p><b>DOD</b>: Architecture diagram created and approved.</p>  
 <p><b>Acceptance Criteria</b>:</p>  
@@ -17,7 +21,7 @@ General: Architecture - As a developer, I need to define the architecture that s
 ---
 
 <h3>Task 2.2: Design the basic user interface for chat interactions and custom function calls</h3>  
-General: UI Design - As a developer, I need to design the basic interface for chat interactions and custom function calls.  
+General: GenAI - UI Design - As a developer, I need to design the basic interface for chat interactions and custom function calls.  
 <p><b>Description</b>: Create a basic design for the chat interface and define how custom function calls will be triggered from the user interface.</p>  
 <p><b>DOD</b>: UI design completed and approved.</p>  
 <p><b>Acceptance Criteria</b>:</p>  
@@ -31,7 +35,7 @@ General: UI Design - As a developer, I need to design the basic interface for ch
 ---
 
 <h3>Task 2.3: Create flow diagrams for data between the interface, MySQL, and OpenSearch</h3>  
-General: Architecture - As a developer, I need to create flow diagrams to show how data moves between the chat interface, MySQL, and OpenSearch.  
+General: GenAI - Architecture - As a developer, I need to create flow diagrams to show how data moves between the chat interface, MySQL, and OpenSearch.  
 <p><b>Description</b>: Develop flow diagrams that represent the data pathways between the interface, the MySQL database, and OpenSearch for document retrieval.</p>  
 <p><b>DOD</b>: Flow diagrams completed and approved.</p>  
 <p><b>Acceptance Criteria</b>:</p>  
@@ -45,7 +49,7 @@ General: Architecture - As a developer, I need to create flow diagrams to show h
 ---
 
 <h3>Task 2.4: Define core security measures (API keys, token management, data encryption)</h3>  
-General: Security - As a developer, I need to define the core security measures for managing API keys, tokens, and data encryption.  
+General: GenAI - Security - As a developer, I need to define the core security measures for managing API keys, tokens, and data encryption.  
 <p><b>Description</b>: Establish key security protocols, including the management of API keys, secure token handling, and data encryption to ensure the system's security.</p>  
 <p><b>DOD</b>: Security measures defined and documented.</p>  
 <p><b>Acceptance Criteria</b>:</p>  
@@ -58,10 +62,12 @@ General: Security - As a developer, I need to define the core security measures 
 
 ---
 
-<!-- Version 2: Integration of AutoGen and Initial Dashboard -->
+<h3>Version 2: Integration of AutoGen and Initial Dashboard</h3>
+
+---
 
 <h3>Task 2.5: Define the architecture for integrating AutoGen with the system</h3>  
-General: Architecture - As a developer, I need to define the architecture for integrating AutoGen with the existing system.  
+General: GenAI - Architecture - As a developer, I need to define the architecture for integrating AutoGen with the existing system.  
 <p><b>Description</b>: Design how AutoGen will interact with existing system components, including document analysis and response generation.</p>  
 <p><b>DOD</b>: Architecture for AutoGen integration defined and approved.</p>  
 <p><b>Acceptance Criteria</b>:</p>  
@@ -75,7 +81,7 @@ General: Architecture - As a developer, I need to define the architecture for in
 ---
 
 <h3>Task 2.6: Design the initial dashboard layout, identifying key metrics</h3>  
-General: UI Design - As a developer, I need to design the layout for the initial dashboard and identify the key metrics to display.  
+General: GenAI - UI Design - As a developer, I need to design the layout for the initial dashboard and identify the key metrics to display.  
 <p><b>Description</b>: Create a design for the dashboard interface that will display important system performance metrics, such as query volume and AutoGen activity.</p>  
 <p><b>DOD</b>: Dashboard layout designed and metrics identified.</p>  
 <p><b>Acceptance Criteria</b>:</p>  
@@ -88,10 +94,12 @@ General: UI Design - As a developer, I need to design the layout for the initial
 
 ---
 
-<!-- Version 3: Advanced Dashboard and Enhancements -->
+<h3>Version 3: Advanced Dashboard and Enhancements</h3>
+
+---
 
 <h3>Task 2.7: Expand the dashboard with advanced features and interactive components</h3>  
-General: UI Design - As a developer, I need to enhance the dashboard by adding advanced features and interactive components.  
+General: GenAI - UI Design - As a developer, I need to enhance the dashboard by adding advanced features and interactive components.  
 <p><b>Description</b>: Extend the initial dashboard by including additional features such as real-time filtering, interactive charts, and advanced performance metrics.</p>  
 <p><b>DOD</b>: Advanced dashboard features designed and documented.</p>  
 <p><b>Acceptance Criteria</b>:</p>  
@@ -105,7 +113,7 @@ General: UI Design - As a developer, I need to enhance the dashboard by adding a
 ---
 
 <h3>Task 2.8: Refine architecture to support dynamic task allocation and scalability</h3>  
-General: Architecture - As a developer, I need to refine the system architecture to support dynamic task allocation and improve scalability.  
+General: GenAI - Architecture - As a developer, I need to refine the system architecture to support dynamic task allocation and improve scalability.  
 <p><b>Description</b>: Optimize the existing system architecture to handle dynamic task allocation and scale efficiently as the system grows.</p>  
 <p><b>DOD</b>: Architecture refined and approved for scalability.</p>  
 <p><b>Acceptance Criteria</b>:</p>  
@@ -118,4 +126,4 @@ General: Architecture - As a developer, I need to refine the system architecture
 
 ---
 
-Esto cubre todas las tareas en el formato requerido. Si necesitas ajustes adicionales, no dudes en pedírmelo.
+Ahora todas las tareas están claramente separadas, con las versiones, el campo **GenAI**, y las dependencias correctamente indicadas. Si necesitas más ajustes, no dudes en decírmelo.
