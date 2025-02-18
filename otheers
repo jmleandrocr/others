@@ -1,100 +1,26 @@
-1. Complexity
-Does the project require the use of advanced AI algorithms? (1-5)
-Is it necessary to create custom AI models? (1-5)
-Does the project involve customizing or fine-tuning pre-trained models for specific needs? (1-5)
-Are additional components or complementary developments required beyond the existing model? (1-5)
-Does the project need integration with existing automation tools (e.g., Power Automate, Selenium)? (1-5)
-Is there a high level of integration needed with other platforms or systems? (1-5)
-2. Data Availability and Quality
-Are the necessary data available in the appropriate format? (1-5)
-Does the project involve processing unstructured documents? (1-5)
-Are there complexities associated with parsing or converting file formats? (1-5)
-Is Optical Character Recognition (OCR) required for processing scanned documents? (1-5)
-Do the data require significant preprocessing or cleaning? (1-5)
-Do the data require additional labeling or annotations? (1-5)
-Are there challenges related to data quality, such as noise, errors, or inconsistencies? (1-5)
-Is the project dealing with large volumes of data or big data considerations? (1-5)
-3. Technical Resources and Infrastructure
-Are current computational resources sufficient to implement the project? (1-5)
-Is additional infrastructure needed (e.g., GPUs, cloud services, etc.)? (1-5)
-Does the project require special considerations for data security or privacy? (1-5)
-Are complex database operations or optimizations needed? (1-5)
-Does the project involve real-time data retrieval or updates? (1-5)
-Are there security considerations when accessing or modifying database data? (1-5)
-4. Team Expertise and Training
-Does the team have experience in generative AI and existing models? (1-5)
-Is training or hiring specialized personnel required? (1-5)
-Is collaboration with external experts or consultants necessary? (1-5)
-5. Project Timeline
-Can the project be completed within a reasonable timeframe? (1-5)
-Are there tight or critical deadlines that must be met? (1-5)
-Is the estimated implementation time reasonable for the project's scope? (1-5)
-6. Impact and Expected Benefits
-Will the project provide significant improvements to current processes or products? (1-5)
-Will it generate competitive advantages or open new business opportunities? (1-5)
-Is a high return on investment (ROI) expected? (1-5)
-7. Risks and Potential Challenges
-What is the level of technological risk associated with using generative AI in this context? (1-5)
-Are there uncertainties regarding user acceptance or market adoption? (1-5)
-Does the project depend on emerging or unproven technologies? (1-5)
-8. Cost and Budget
-Does the project fit within the available budget? (1-5)
-Are there additional costs not initially considered (licenses, subscriptions, etc.)? (1-5)
-Is funding secured for all stages of the project? (1-5)
-9. Scalability and Maintenance
-Can the system be easily scaled to meet increased demand? (1-5)
-Are maintenance costs sustainable in the long term? (1-5)
-Is it easy to update or improve the system in the future? (1-5)
-10. Legal and Ethical Compliance
-Does the project comply with applicable regulations and standards (data protection, privacy, etc.)? (1-5)
-Are there ethical considerations in using generative AI that need to be addressed? (1-5)
-Is it necessary to obtain special permissions or licenses? (1-5)
-11. Usability and User Experience
-Does the project require a complex or highly customized user interface? (1-5)
-Is it necessary to conduct usability or user experience testing? (1-5)
-Is the system expected to be used by non-technical users? (1-5)
-12. Types of Files and Data Processing
-What types of files need to be processed (e.g., PDFs, Word documents, images, audio)? (1-5)
-Does the project involve extracting information from unstructured documents? (1-5)
-Are there complexities associated with parsing or converting file formats? (1-5)
-Is OCR required for processing scanned documents? (1-5)
-Does the project involve processing large volumes of data or big data considerations? (1-5)
-Are there challenges related to data quality, such as noise, errors, or inconsistencies? (1-5)
-13. Database Queries and Integration
-Does the project require querying databases to generate responses? (1-5)
-Is integration with existing database systems necessary? (1-5)
-Are complex database operations or optimizations needed? (1-5)
-Does the project involve real-time data retrieval or updates? (1-5)
-Are there security considerations when accessing or modifying database data? (1-5)
-14. User Considerations
-Who are the end-users of the system (technical, non-technical, customers, internal staff)? (1-5)
-Does the project need to accommodate multiple user roles or permissions? (1-5)
-Is user authentication and authorization required? (1-5)
-Are there specific user experience (UX) requirements or accessibility considerations? (1-5)
-Does the system need to support multiple languages or localization? (1-5)
-Is user training or onboarding necessary for effective use of the system? (1-5)
-15. Expected Responses and Outputs
-What is the expected format of the responses (text, structured data, reports, visualizations)? (1-5)
-Do the responses need to be highly accurate or precise? (1-5)
-Is there a requirement for the responses to comply with specific standards or regulations? (1-5)
-Are the responses time-sensitive or require real-time generation? (1-5)
-Does the project involve generating personalized responses based on user data? (1-5)
-Is post-processing of the AI-generated output necessary before presenting it to users? (1-5)
-Do the responses need to be stored or logged for future reference or compliance? (1-5)
-16. Automation of Outputs
-Do the outputs need to trigger automated actions or workflows? (1-5)
-Is there a need to integrate outputs with other systems or APIs? (1-5)
-Does the project require monitoring and logging of outputs for compliance or analytics? (1-5)
-Are there feedback mechanisms to improve the quality of outputs over time? (1-5)
-17. Flexibility and Customization
-Does the project require the generative AI to adapt to different contexts or use cases? (1-5)
-Is it necessary to allow high levels of customization for the end-user? (1-5)
-Does the system need to support multiple languages or data formats? (1-5)
-18. Collaboration and Communication
-Does the project involve collaboration between multiple teams or departments? (1-5)
-Is it necessary to coordinate with external partners or vendors? (1-5)
-Are there significant challenges in project communication and management? (1-5)
-19. Automation Requirements
-Does the project require additional automations (e.g., with Power Automate, Selenium)? (1-5)
-Is it necessary to automate actions based on the AI-generated outputs? (1-5)
-Will the implementation affect multiple departments or business areas? (1-5)
+const fs = require("fs");
+const path = require("path");
+
+// Directorios comunes donde se buscan certificados
+const pathsToWatch = [
+  "/etc/ssl/certs/",
+  "/usr/local/share/ca-certificates/",
+  "/usr/local/etc/openssl/cert.pem",
+  "/System/Library/Keychains/SystemRootCertificates.keychain",
+  process.env.NODE_EXTRA_CA_CERTS, // La variable de entorno que configuraste
+  require("os").homedir() + "/.certs/",
+];
+
+// Monitorear accesos a certificados
+pathsToWatch.forEach((dir) => {
+  if (dir && fs.existsSync(dir)) {
+    console.log(`📡 Monitoreando archivos en: ${dir}`);
+    fs.watch(dir, (eventType, filename) => {
+      console.log(`🔍 Archivo accedido: ${path.join(dir, filename)} (${eventType})`);
+    });
+  }
+});
+
+console.log("👀 Monitoreo iniciado. Ahora ejecuta `npm install` o `pnpm install`.");
+
+setInterval(() => {}, 1000 * 60); // Mantiene el script activo
