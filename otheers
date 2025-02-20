@@ -1,26 +1,28 @@
-const fs = require("fs");
-const path = require("path");
-
-// Directorios comunes donde se buscan certificados
-const pathsToWatch = [
-  "/etc/ssl/certs/",
-  "/usr/local/share/ca-certificates/",
-  "/usr/local/etc/openssl/cert.pem",
-  "/System/Library/Keychains/SystemRootCertificates.keychain",
-  process.env.NODE_EXTRA_CA_CERTS, // La variable de entorno que configuraste
-  require("os").homedir() + "/.certs/",
-];
-
-// Monitorear accesos a certificados
-pathsToWatch.forEach((dir) => {
-  if (dir && fs.existsSync(dir)) {
-    console.log(`📡 Monitoreando archivos en: ${dir}`);
-    fs.watch(dir, (eventType, filename) => {
-      console.log(`🔍 Archivo accedido: ${path.join(dir, filename)} (${eventType})`);
-    });
-  }
-});
-
-console.log("👀 Monitoreo iniciado. Ahora ejecuta `npm install` o `pnpm install`.");
-
-setInterval(() => {}, 1000 * 60); // Mantiene el script activo
+{
+    // Otras configuraciones que ya existan...
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Django (Poetry)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver",
+                "0.0.0.0:8000" // o el puerto que tú quieras
+            ],
+            "django": true,
+            "cwd": "${workspaceFolder}",
+            // En macOS/Linux podrías especificar el intérprete directo de la venv, 
+            // pero si ya lo elegiste en "Python: Select Interpreter",
+            // VSCode usará automáticamente ese intérprete.
+            // De no funcionar, puedes forzar la ruta, por ejemplo:
+            // "python": "/home/usuario/.cache/pypoetry/virtualenvs/mi-proyecto-xxx-py3.10/bin/python",
+            
+            // En Windows, normalmente sería algo como:
+            // "python": "C:\\Users\\Usuario\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\mi-proyecto-xxx-py3.10\\Scripts\\python.exe",
+            
+            "console": "integratedTerminal"
+        }
+    ]
+}
