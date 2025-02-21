@@ -12,7 +12,7 @@ remote_state {
   }
 }
 
-# Bloqueo de versiones para evitar configuraciones obsoletas
+# Bloqueo de versiones para evitar destrucciones accidentales
 prevent_destroy = true
 
 # Seguridad: Bloquea ambientes sensibles (solo producción)
@@ -20,27 +20,28 @@ inputs = {
   environment = basename(get_parent_terragrunt_dir())
 }
 
-# Políticas de ejecución seguras
+# 🔹 Generar variables de ejecución seguras para Terraform
+generate "terraform_cli_args" {
+  path      = "cli_args.tfvars"
+  if_exists = "overwrite"
+  contents  = <<EOF
 terraform {
   extra_arguments "prevent_destroy" {
     commands = ["destroy"]
     arguments = ["-lock=false", "-force"]
-    required_var_files = [
-      find_in_parent_folders("terraform.tfvars", "override.tfvars")
-    ]
+  }
+
+  extra_arguments "safety" {
+    commands = ["apply"]
+    arguments = ["-auto-approve=false"]
+  }
+
+  extra_arguments "logging" {
+    commands = ["apply", "plan"]
+    env_vars = {
+      TF_LOG = "INFO"
+    }
   }
 }
-
-# Evita aplicar cambios sin revisión previa (Ideal en CI/CD)
-extra_arguments "safety" {
-  commands = ["apply"]
-  arguments = ["-auto-approve=false"]
-}
-
-# Logging Avanzado (Registro de ejecuciones)
-extra_arguments "logging" {
-  commands = ["apply", "plan"]
-  env_vars = {
-    TF_LOG = "INFO"
-  }
+EOF
 }
